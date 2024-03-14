@@ -1,0 +1,198 @@
+JavaScript is a powerful programming language that can add interactivity to a website. It was invented by Brendan Eich.
+
+->
+NaN (Not a Number)
+
+The NaN global property is a value representing Not-A-Number.
+Any operation perfom with NaN will always return Nan.
+Example:
+1)
+console.log(typeof Nan)
+output:Number
+2)
+console.log(NaN + 1)
+console.log(NaN *2)
+console.log(NaN/2)
+console.log(NaN+NaN)
+
+
+
+
+
+
+->
+Identifier:
+Each variable in javascript is named by an unique names(Identifier)
+Rules for declaring the identifiers for the varibles
+1) the variable can be a combination of letter, digit, underscore and dollar symbol.
+2) the first letter cannot a digit.
+3) the first letter should be a letter, underscore, or dolar symbol.
+4) Names are case sensitive (y and Y are different variables).
+5) the varible name cannot be a reserved words(like Javascript keywords)be used as names.
+
+
+->
+CAMELCASE
+
+camelCase:- it is the different way of writing identifiers in js
+camelCase( Js naming camelCase)
+snake_CASE-> let full_name
+PascalCase- >let UserName
+
+->
+Note:
+in Java Script we will able  to change the  type of the variable  at declaration time which is not allowed in major languages such as java and c++
+example:
+let age  = 33;
+age  = true;
+console.log(age);
+
+->
+What is typescript ?
+static typed, where JS is dynamic typed
+AND the typescript was designed by Microsoft
+it is not applicable for the  following case:-
+ example:
+
+ let currentAge = 13;
+
+currentAge = true;
+console.log(currentAge);
+
+
+output:it will through an error in case of typescript
+
+
+->
+to find the length of a string we can use the string name.length function.
+to find the first letter of string we have to use string name[0];
+similarly, to find the last letter of the string we use string name[length-1];
+
+
+Note:-
+let a = 22;
+let b = "22";
+console.log(a == b) it will give no error (give true) but if we check using strict checking(using ===) it is going to give error or(false)
+similarly
+let name1 = "liku"
+let name2 = "Liku"
+console.log(name1==name2 && name1===name2) it is also possible in checking the conditions
+
+
+Lets learn about the truthy and falsy in js
+-> Everything in JS is true ot false (in boolean context).
+->This doesnot mean their value itself is false or true , but they  are treated as false or true if taken in boolean context.
+ Note:
+  -> All the Falsy values in js
+  false, 0, -0, ON(BigInt),"(empty string), null, undefined, NaN
+
+  Truthy values
+  Everything else
+
+
+
+  
+Lets learn about the String methods
+Methods-> actions that can be performed on objects.
+format-> stringName.method()
+1) method-1
+str.trim()
+{
+    it is used to trim whitespaces from both ends of a string and returns a new one.
+    it didnot remove the white spaces between the letter but the space after or before the letter.
+    it doesnot mean the space of the current strinng spaces was removed but a new string is created which doesnto contain any whitespace before and after the string
+}
+
+2) Strings are immutable
+No changes can be made to strings.
+Whenever we do try to make a change, a new string is created and old one remains same.
+
+3) toUpperCase and toLowerCase methods
+command-> stringName.toUpperCase or toLowerCase();
+
+4) String Methods with Arguments
+Argument is a some value that we pass to the method.
+format->stringName.method(arg)
+  i) indexof()
+  {
+    it return the first index of occurances of some value in string. Or gives -1 if not found.
+    example:
+    let str = "Ilove Coding";
+
+    str.indexOf("love");
+    str.indexOf("k");
+    str.indexOf("o");
+
+  }
+5) Method chaining 
+Using one method after anothew. Order of execution will be left to right.
+str.toUppercase().trim()
+
+6) Slice
+Return a part of the original string as a new string
+example
+let str = "ILOVECODING"
+str.slice(5);  //Coding
+str.slice(1,4);
+str.slice(-num) = str.slice(length-num)
+
+7) Replace
+Searches a value in the string and returns a new string with the value replaced.
+  example
+  let str = "ILOVECODING;
+  str.replace("love", "do") //"idocoding
+  str.replace("o", "x");
+
+8) Repeat()
+ it returns a string with number of copies of a string
+ example
+ let str = "Mango";
+ str.repeat(3) // "MangoMangoMango
+
+
+
+
+
+ Lets Jump into the "Arrays"
+ It is a linear collection of elements
+ format:
+ let a = [12,22,2,22,3];
+ let b = ["liku", "lima", "raja","motu"];
+ also a heterogeneous array can be also generated
+ example:
+ let c = [12,"liku",'c', 22.443,33];
+ an empty array canbe also possible to created
+ let d = []
+ output:[] and if we try to access the index of it it will show the undefiend answer
+
+
+ to find the length of the array we use -> array.length
+
+
+-> Suppose we want to extarct the first string from an array then we can also use info[index] and if we want to access the indexed value of that string we use info[0][0]
+Initially string are immutable in java script they dont  change their value but the strings with the help of arrays can be chaged
+example
+let arr = ["liku", "lima", "razz"];
+arr[2] = "rima";
+console.log(arr); //output: ['liku', 'lima', 'rima'];
+
+Note:(remember)
+we can also create and store the value at that index that exceeds the arr size
+example
+let arr = [222,22,22,244,4];
+arr[444] = 55;
+console.log(arr);
+
+output:[222,22,22,244,4,<440 empty items>,55]
+
+Array methods
+1)push:-add to end
+2) pop-> delete from end and return it
+3) Unshift->add to start
+4) Shift-> delete from start and return it 
+5) concat->to concatenate two arrays o9r merge two arrays -----> command ->console.log(primary.concat(secondary));
+  -> also during concatinating two arrays the elements of the first array will be displayed 
+  if it is secondary.concat(primary) ->it will display the elements of the second array
+  
+6) reverse->it is used to reverse an array
+7) It copies a portion of an array
