@@ -80,7 +80,7 @@ console.log(name1==name2 && name1===name2) it is also possible in checking the c
 
 
 Lets learn about the truthy and falsy in js
--> Everything in JS is true ot false (in boolean context).
+-> Everything in JS is true or false (in boolean context).
 ->This doesnot mean their value itself is false or true , but they  are treated as false or true if taken in boolean context.
  Note:
   -> All the Falsy values in js
@@ -125,7 +125,7 @@ format->stringName.method(arg)
 
   }
 5) Method chaining 
-Using one method after anothew. Order of execution will be left to right.
+Using one method after another. Order of execution will be left to right.
 str.toUppercase().trim()
 
 6) Slice
@@ -195,4 +195,9 @@ Array methods
   if it is secondary.concat(primary) ->it will display the elements of the second array
   
 6) reverse->it is used to reverse an array
-7) It copies a portion of an array
+7) It copies a portion of an array (slice) and also the splice methoid to add/replace and remove the items in the array
+syntax: start/ deleteCount/ items1 ...itemsn;
+
+8) Sort method
+it sorts an either in ascending or descending order
+

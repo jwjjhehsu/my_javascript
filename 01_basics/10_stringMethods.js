@@ -44,3 +44,14 @@ console.log()
 // Repeat()
 let msg4 = "Hello     ";
 console.log(msg4.trim().repeat(10));
+
+// splice:removes/ replace / add elements in place
+
+// splice(start, deleteCount,item0......itemN)
+let msg5 = [12,2232,33,454,44,343,"liku"];
+console.log(msg5.splice(4));
+console.log(ms)
+
+
+let vv= "rrr";
+console.log(typeof(vv));

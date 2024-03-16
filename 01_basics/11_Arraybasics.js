@@ -30,3 +30,35 @@ console.log("after change" + arr);
 let arr2 = [12,22,2,22]
 arr2[100]= 22222;
 console.log(arr2);
+
+// constant array
+const arre = [12,22,22,33,2];
+arre.push(323);
+// it can successfully add a new element
+console.log(arre);
+arre.pop();
+// it can also remove the element from the array
+
+// But if want to assign a new array to it or new array element we can not do that
+// arr = [12,22,22,33,2];
+// console.log(arr);
+
+// let cars = ['mercedes','audi','ferrari']
+// arr = cars;
+// console.log(arr);  //it cannot be also be done 
+
+
+// Nested Arrays ->(Arrays of Arrays)
+let arrOfArr = [[12,22],[33,44],[44,55]];
+console.log(arrOfArr);
+console.log(arrOfArr[0]);
+console.log(arrOfArr[1].length);
+
+// How to acces the indivisual array elements inside a nested array
+console.log(arrOfArr[0][3]); //undefied
+console.log(arrOfArr[1][1]);
+
+
+
+
+

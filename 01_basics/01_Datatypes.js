@@ -25,6 +25,6 @@ let isLoggedin = false
 
 
 // OBJECT
-console.log(typeof 88);
+console.log(typeof 88);//it will give the "Number"
 console.log(typeof null);  //->it will give the output of object
 console.log(typeof undefined);//->it will give the output as undefined
